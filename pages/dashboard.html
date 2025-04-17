@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dashboard | Rice Crop Inc.</title>
+  <link rel="stylesheet" href="../assets/css/dashboard.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <div class="logo">
+        <img src="../assets/img/logo.png" alt="Rice Crop Inc." />
+        <h2>Rice Crop Inc.</h2>
+      </div>
+      <nav class="nav-links">
+        <a href="../index.html">🏠 Home</a>
+        <a href="#" class="active">📊 Dashboard</a>
+        <a href="login.html">🚪 Logout</a>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+      <header class="dashboard-header">
+        <h1>Welcome, Farmer!</h1>
+        <p>Here's an overview of your rice production data.</p>
+      </header>
+
+      <section class="cards">
+        <a href="palay.html" class="card-link">
+          <div class="card">
+            <h3>Palay Production</h3>
+            <p class="main-value">1,772,449</p>
+            <span class="badge">metric tons</span>
+          </div>
+        </a>
+        <a href="area.html" class="card-link">
+          <div class="card">
+            <h3>Area Harvested</h3>
+            <p class="main-value">292,613</p>
+            <span class="badge">hectares</span>
+          </div>
+        </a>
+        <a href="yield.html" class="card-link">
+          <div class="card">
+            <h3>Average Yield</h3>
+            <p class="main-value">6.06</p>
+            <span class="badge">metric tons per hectare</span>
+          </div>
+        </a>
+        <a href="machinery.html" class="card-link">
+          <div class="card machinery-card">
+            <h3>Machinery (2022 DS)</h3>
+            <div class="bar-group">
+              <div class="bar-label">Combine Harvester</div>
+              <div class="bar"><div class="fill" style="width: 99%"></div><span class="percent">99%</span></div>
+        
+              <div class="bar-label">Handtractor</div>
+              <div class="bar"><div class="fill" style="width: 99%"></div><span class="percent">99%</span></div>
+        
+              <div class="bar-label">Four Wheel Tractor</div>
+              <div class="bar"><div class="fill" style="width: 97%"></div><span class="percent">97%</span></div>
+        
+              <div class="bar-label">Water Pump</div>
+              <div class="bar"><div class="fill" style="width: 45%"></div><span class="percent">45%</span></div>
+        
+              <div class="bar-label">Thresher</div>
+              <div class="bar"><div class="fill" style="width: 0.7%"></div><span class="percent">0.7%</span></div>
+        
+              <div class="bar-label">Others</div>
+              <div class="bar"><div class="fill" style="width: 30%"></div><span class="percent">29.8%</span></div>
+            </div>
+            <span class="badge">More Details</span>
+          </div>
+        </a>
+        
+      </section>
+    </main>
+  </div>
+</body>
+</html>

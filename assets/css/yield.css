@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body {
+    background: #f5f5f5;
+    position: relative; /* Enables back button absolute positioning */
+  }
+  
+  .container {
+    display: flex;
+    min-height: 100vh;
+  }
+  
+  .sidebar {
+    width: 250px;
+    background-color: #d6f7c4;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 1.5rem;
+    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+  }
+  
+  .logo img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .logo h2 {
+    font-size: 1.5rem;
+    color: #000;
+  }
+  
+  .nav-links a {
+    display: block;
+    padding: 0.75rem 1rem;
+    margin-bottom: 1rem;
+    color: black;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background 0.3s ease;
+  }
+  
+  .nav-links a:hover,
+  .nav-links .active {
+    background-color: #006400;
+    color: white;
+  }
+  
+  .main-content {
+    flex: 1;
+    padding: 2rem;
+  }
+  
+  .dashboard-header h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .dashboard-header p {
+    font-size: 1rem;
+    color: #444;
+    margin-bottom: 2rem;
+  }
+  
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+  }
+  
+  .card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 128, 0, 0.1);
+    transition: transform 0.3s ease;
+    text-align: center;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card h3 {
+    font-size: 1.2rem;
+    color: #006400;
+    margin-bottom: 0.5rem;
+  }
+  
+  .main-value {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #006400;
+    margin-bottom: 0.5rem;
+  }
+  
+  .badge {
+    display: inline-block;
+    margin-top: 0.5rem;
+    padding: 0.3rem 0.8rem;
+    background-color: #006400;
+    color: white;
+    border: 2px solid #006400;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-align: center;
+  }
+  
+  .card-link {
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.3s ease;
+  }
+  
+  .card-link:hover .card {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 128, 0, 0.2);
+  }
+  
+  .back-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #006400;
+    color: white;
+    padding: 0.6rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+  }
+  
+  .back-btn:hover {
+    background-color: #228B22;
+  }
+  /* Bar Graph Section */
+.municipality-chart {
+  margin-top: 2rem;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.bar {
+  --width: 50%;
+  background: #006400;
+  margin-bottom: 12px;
+  height: 32px;
+  width: var(--width);
+  max-width: 100%;
+  color: white;
+  font-weight: 500;
+  padding-left: 14px;
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+#scm {
+font-size: 15px;
+}
+.bar:hover {
+  filter: brightness(1.1);
+}

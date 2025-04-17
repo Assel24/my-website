@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body {
+    background: #f5f5f5;
+  }
+  
+  .container {
+    display: flex;
+    min-height: 100vh;
+  }
+  
+  .sidebar {
+    width: 250px;
+    background-color: #d6f7c4;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 1.5rem;
+    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+  }
+  
+  .logo img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .logo h2 {
+    font-size: 1.5rem;
+    color: #000;
+  }
+  
+  .nav-links a {
+    display: block;
+    padding: 0.75rem 1rem;
+    margin-bottom: 1rem;
+    color: black;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background 0.3s ease;
+  }
+  
+  .nav-links a:hover,
+  .nav-links .active {
+    background-color: #006400;
+    color: white;
+  }
+  
+  .main-content {
+    flex: 1;
+    padding: 2rem;
+  }
+  
+  .dashboard-header h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .dashboard-header p {
+    font-size: 1rem;
+    color: #444;
+    margin-bottom: 2rem;
+  }
+  
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+  }
+  
+  .card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 128, 0, 0.1);
+    transition: transform 0.3s ease;
+    text-align: center;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card h3 {
+    font-size: 1.2rem;
+    color: #006400;
+    margin-bottom: 0.5rem;
+  }
+  
+  .main-value {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #006400;
+    margin-bottom: 0.5rem;
+  }
+  
+  .badge {
+    display: inline-block;
+    background-color: #006400;
+    color: white;
+    padding: 0.3rem 0.75rem;
+    border-radius: 12px;
+    font-size: 0.85rem;
+    border: 2px solid #006400;
+  }
+  /* .card-link {
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.3s ease;
+  }
+  
+  .card-link:hover .card {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 128, 0, 0.2);
+  }   */
+  .card-link {
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.2s ease;
+  }
+  
+  .card-link:hover .card {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 128, 0, 0.2);
+  }
+  .machinery-card .bar-group {
+    margin-top: 1rem;
+  }
+  
+  .bar-label {
+    font-size: 0.85rem;
+    color: #333;
+    margin: 0.3rem 0;
+  }
+  
+  .bar {
+    position: relative;
+    background-color: #eee;
+    border-radius: 10px;
+    height: 20px;
+    margin-bottom: 1rem;
+    overflow: hidden;
+  }
+  
+  .bar .fill {
+    background-color:  #006400; /* Blue like the original chart */
+    height: 100%;
+    border-radius: 10px 0 0 10px;
+  }
+  
+  .bar .percent {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 0.8rem;
+    color: #000;
+    font-weight: 600;
+  }
+  
